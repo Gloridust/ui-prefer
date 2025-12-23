@@ -5,8 +5,8 @@ import { useState } from 'react';
 interface ControlPanelProps {
   primaryColor: string;
   setPrimaryColor: (color: string) => void;
-  uiStyle: 'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist';
-  setUiStyle: (style: 'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist') => void;
+  uiStyle: 'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist' | 'industrial' | 'corporate';
+  setUiStyle: (style: 'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist' | 'industrial' | 'corporate') => void;
   viewMode: 'desktop' | 'mobile';
   setViewMode: (mode: 'desktop' | 'mobile') => void;
 }
@@ -30,6 +30,8 @@ const uiStyles = [
   { id: 'material', name: 'Material Design', description: '谷歌材质设计' },
   { id: 'rounded', name: '圆角卡片', description: '大圆角柔和风格' },
   { id: 'brutalist', name: '野性主义', description: '粗犷原始的设计风格' },
+  { id: 'industrial', name: '工业风', description: '重工业风格，金属质感' },
+  { id: 'corporate', name: '传统企业', description: '正式严谨的企业网站' },
 ] as const;
 
 export default function ControlPanel({

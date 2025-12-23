@@ -6,7 +6,7 @@ import ComponentShowcase from './ComponentShowcase';
 
 interface PreviewAreaProps {
   primaryColor: string;
-  uiStyle: 'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist';
+  uiStyle: 'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist' | 'industrial' | 'corporate';
   viewMode: 'desktop' | 'mobile';
 }
 

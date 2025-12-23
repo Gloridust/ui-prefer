@@ -6,7 +6,7 @@ import PreviewArea from './components/PreviewArea';
 
 export default function Home() {
   const [primaryColor, setPrimaryColor] = useState('#3B82F6');
-  const [uiStyle, setUiStyle] = useState<'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist'>('flat');
+  const [uiStyle, setUiStyle] = useState<'flat' | 'neumorphic' | 'glassmorphic' | 'ios' | 'material' | 'rounded' | 'brutalist' | 'industrial' | 'corporate'>('flat');
   const [viewMode, setViewMode] = useState<'desktop' | 'mobile'>('desktop');
 
   return (
